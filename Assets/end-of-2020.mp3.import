@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/end-of-2020.mp3-a88a887f713803992bcd6044175c2daa.mp3str"
+
+[deps]
+
+source_file="res://Assets/end-of-2020.mp3"
+dest_files=[ "res://.import/end-of-2020.mp3-a88a887f713803992bcd6044175c2daa.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/troll-laugh.mp3-ba6b55157bb5c6864d82e0f3ad1518f2.mp3str"
+
+[deps]
+
+source_file="res://Assets/troll-laugh.mp3"
+dest_files=[ "res://.import/troll-laugh.mp3-ba6b55157bb5c6864d82e0f3ad1518f2.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,3 +1,75 @@
-[gd_scene format=2]
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Assets/punch-gaming-sound-effect-hd_RzlG1GE.mp3" type="AudioStream" id=1]
+[ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=2]
+[ext_resource path="res://UI/HUD.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Asteroid/Asteroid.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Player/Player_Container.gd" type="Script" id=5]
+[ext_resource path="res://UI/Control.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Assets/lego-yoda-death-sound-effect.mp3" type="AudioStream" id=7]
+[ext_resource path="res://Assets/troll-laugh.mp3" type="AudioStream" id=8]
+[ext_resource path="res://Assets/Western for the game.mp3" type="AudioStream" id=9]
+[ext_resource path="res://Assets/064-laser-thum_hYpSdXS.mp3" type="AudioStream" id=10]
+[ext_resource path="res://UI/Main_Menu.tscn" type="PackedScene" id=11]
 
 [node name="Game" type="Node2D"]
+pause_mode = 1
+
+[node name="Main_Menu" parent="." instance=ExtResource( 11 )]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+
+[node name="Player_Container" type="Node2D" parent="."]
+script = ExtResource( 5 )
+
+[node name="Asteroid_Container" type="Node2D" parent="."]
+
+[node name="Asteroid" parent="Asteroid_Container" instance=ExtResource( 4 )]
+position = Vector2( 722, 97 )
+
+[node name="Asteroid2" parent="Asteroid_Container" instance=ExtResource( 4 )]
+position = Vector2( 474, 156 )
+
+[node name="Asteroid3" parent="Asteroid_Container" instance=ExtResource( 4 )]
+position = Vector2( 113, 262 )
+
+[node name="Asteroid4" parent="Asteroid_Container" instance=ExtResource( 4 )]
+position = Vector2( 110, 127 )
+
+[node name="Effects" type="Node2D" parent="."]
+
+[node name="Enemy_Container" type="Node2D" parent="."]
+
+[node name="Enemy" parent="Enemy_Container" instance=ExtResource( 2 )]
+position = Vector2( -67, 124 )
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="HUD" parent="UI" instance=ExtResource( 3 )]
+pause_mode = 2
+
+[node name="Paused_Menu" parent="UI" instance=ExtResource( 6 )]
+visible = false
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+volume_db = -9.613
+autoplay = true
+
+[node name="Player_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = -24.471
+
+[node name="Asteroid_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+volume_db = -13.983
+
+[node name="Small_Asteroid_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+volume_db = -28.841
+
+[node name="Bullet_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+volume_db = -23.597

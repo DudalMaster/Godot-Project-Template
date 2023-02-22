@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/lego-yoda-death-sound-effect.mp3-c43f713b4d11b4a60f009d8fe1d47dec.mp3str"
+
+[deps]
+
+source_file="res://Assets/lego-yoda-death-sound-effect.mp3"
+dest_files=[ "res://.import/lego-yoda-death-sound-effect.mp3-c43f713b4d11b4a60f009d8fe1d47dec.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
