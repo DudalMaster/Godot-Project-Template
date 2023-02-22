@@ -14,7 +14,7 @@ This game includes features like mshooting asteroids that explode into
 smaller memes with sound effects. Each ship has shooting sound effects
 
 ## References
-
+None
 ## Future Development
 None
 ## Created by
